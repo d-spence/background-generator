@@ -19,7 +19,8 @@ function setGradient() {
 
 function getGradientCSS() {
     // Return the linear gradient css property of current bg
-    return `linear-gradient(${ANGLES[currentAngleIndex]}, ${color1.value}, ${color2.value})`;
+    let gradientCss = `linear-gradient(${ANGLES[currentAngleIndex]}, ${color1.value}, ${color2.value})`;
+    return gradientCss;
 }
 
 function randomColor() {
@@ -43,7 +44,7 @@ function nextAngle() {
     } else {
         currentAngleIndex++;
     }
-    console.log(currentAngleIndex, ANGLES[currentAngleIndex]);
+    // console.log(currentAngleIndex, ANGLES[currentAngleIndex]);
     setGradient();
 }
 
@@ -53,5 +54,6 @@ random.addEventListener("click", randomGradient);
 angle.addEventListener("click", nextAngle);
 
 document.addEventListener('DOMContentLoaded', () => {
+    randomGradient();
     css.textContent = getGradientCSS() + ";";
 })
