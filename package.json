@@ -1,0 +1,22 @@
+{
+  "name": "bg_gen",
+  "version": "1.0.0",
+  "description": "Generate a css linear-gradient background.",
+  "main": "script.js",
+  "scripts": {
+    "build": "browserify script.js > bundle.js && live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-spence/background-generator.git"
+  },
+  "author": "Dan Spencer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-spence/background-generator/issues"
+  },
+  "homepage": "https://github.com/d-spence/background-generator#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
