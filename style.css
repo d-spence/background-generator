@@ -1,10 +1,17 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     color: rgba(0,0,0,.5);
     text-align: center;
     text-transform: uppercase;
     top: 15%;
-    background: linear-gradient(to right, #0f90f3, #2ab92c);
+    background: linear-gradient(0deg, #0f90f3, #2ab92c);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -15,4 +22,12 @@ h1 {
 #random {
     padding: 5px 25px;
     margin: 5px;
+}
+
+#gradientcss {
+    padding: 10px;
+    margin: 0px 20vw;
+    border: 2px solid rgba(0,0,0,.5);
+    color: rgba(0,0,0,.7);
+    background-color: rgba(134, 134, 134, 0.2);
 }
